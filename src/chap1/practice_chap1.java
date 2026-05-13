@@ -9,11 +9,11 @@ public class practice_chap1 {
 
         System.out.println("縦幅" + a + "横幅" + b + "の長方形の面積は、" + c);
    //練習問題1-3
-        boolean is =true;
+
         char zodiac ='駆';
         double pi = 3.14;
         long distance = 314159265853979L;
         String message = "ミナトの攻撃！敵に15ポイントのダメージを与えた。";
-        System.out.println(+zodiac+pi+distance+message);
+       
     }
 }
