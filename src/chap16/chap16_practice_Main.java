@@ -1,6 +1,9 @@
 package chap16;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.*;
 
 public class chap16_practice_Main {
     public static void main(String[] args) {
@@ -29,5 +32,22 @@ public class chap16_practice_Main {
             Integer e2 = it2.next();
             System.out.println(e2);
         }
+        Set<String> words = new TreeSet<String>();
+        words.add("dog");
+        words.add("cat");
+        words.add("wolf");
+        words.add("panda");
+        for(String s : words){
+            System.out.print(s+"→ ");
+        }
+        Map<String,Integer> prefs =new HashMap<String,Integer>();
+        prefs.put("京都府",255);
+        prefs.put("東京都",126333);
+        prefs.put("熊本県",3224);
+        for(String key : prefs.keySet()){
+            int value = prefs.get(key);
+            System.out.println(key+"の人口は、"+value);
+        }
+
     }
 }
